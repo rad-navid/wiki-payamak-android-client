@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:layout_gravity="center" 
+    android:gravity="right">
+
+    <ImageView
+        android:id="@+id/actionImageView"
+        android:layout_height="@dimen/left_right_arrows"
+        android:layout_width="@dimen/left_right_arrows"
+        android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+        android:background="@drawable/button_selector"
+        android:layout_margin="25dp">
+        
+        </ImageView>
+       
+    <TextView
+        android:id="@+id/actionNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_toLeftOf="@id/actionImageView"
+		android:layout_centerVertical="true" 
+        android:textColor="@color/forground_light">
+    </TextView>
+
+</RelativeLayout>

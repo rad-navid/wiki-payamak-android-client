@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.peaceworld.wikisms"
+    android:installLocation="auto"
+    android:versionCode="5"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ExampleTheme" >
+        <activity
+            android:name="com.peaceworld.wikisms.view.slidingmenu.example.ExampleListActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.PropertiesActivity" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.LeftAndRightActivity" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.AttachExample" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.anim.CustomScaleAnimation" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.anim.CustomZoomAnimation" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.anim.CustomRotateAnimation" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.anim.CustomSlideAnimation" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.SlidingTitleBar" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.SlidingContent" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.ViewPagerActivity" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.fragments.FragmentChangeActivity" />
+        <activity android:name="com.peaceworld.wikisms.view.slidingmenu.example.fragments.ResponsiveUIActivity" />
+        <activity
+            android:name="com.peaceworld.wikisms.view.slidingmenu.example.fragments.BirdActivity"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" />
+        <activity android:name="com.crittercism.NotificationActivity" />
+
+        <activity android:name="com.peaceworld.wikisms.view.activity.CategoryManipulationainActivity" >
+        </activity>
+        <activity android:name="com.peaceworld.wikisms.view.newui.BaseActivity" >
+        </activity>
+        <activity android:name="com.peaceworld.wikisms.view.newui.ContentPreviewFragmentActivity" >
+         
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.peaceworld.wikisms.view.newui.ContentPreviewFragmentActivity" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            
+		</activity>
+		
+        <activity android:name="com.peaceworld.wikisms.view.newui.ContentCategoryExplorerFragment" >
+        </activity>
+        <activity android:name="com.peaceworld.wikisms.view.newui.a" >
+        </activity>
+        <activity
+            android:name="com.peaceworld.wikisms.view.activity.SimilarContentVerificationActivity"
+            android:label="@string/title_activity_content_detail_view" >
+        </activity>
+        <activity android:name="com.peaceworld.wikisms.view.preference.SettingPreferenceActivity" >
+        </activity>
+
+        <service android:name="com.peaceworld.wikisms.controller.services.ContentSimilarityCheckService" >
+        </service>
+        <service android:name="com.peaceworld.wikisms.controller.services.BackgroundSyncService" >
+        </service>
+
+        <receiver
+            android:name="com.peaceworld.wikisms.controller.services.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

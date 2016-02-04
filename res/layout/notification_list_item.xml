@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/notificationImageView"
+        android:layout_width="@dimen/header_image_button"
+        android:layout_height="@dimen/header_image_button"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/delete" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/notificationTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/notificationImageView"
+        android:gravity="right"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/forground_light"
+        android:textSize="25dp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/notificationDataTextView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/notificationTitleTextView"
+        android:layout_toEndOf="@id/notificationImageView"
+        android:ems="20"
+        android:maxLines="2"
+        android:textColor="@color/forground_light" >
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ویکی پیامک</string>
+    <string name="properties">SlidingMenu Properties</string>
+    <string name="general">General</string>
+    <string name="viewpager">ViewPager</string>
+    <string name="attach">Attach</string>
+    <string name="title_bar">Title Bar Options</string>
+    <string name="title_bar_slide">Sliding Title Bar</string>
+    <string name="title_bar_content">Sliding Content Only</string>
+    <string name="animations">Custom Animations</string>
+    <string name="anim_zoom">Zoom</string>
+    <string name="anim_scale">Scale</string>
+    <string name="anim_fold">Fold</string>
+    <string name="anim_slide">Slide Up</string>
+    <string name="responsive_ui">Responsive UI</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="left_and_right">Left and Right</string>
+    <string name="github">GitHub</string>
+    <string name="github_label">SlidingMenu on GitHub</string>
+    <string name="what_is_this">What is this?</string>
+    <string name="responsive_explanation">This is an example of a UI that responds well to device type. On phones, the menu will be placed inside a SlidingMenu, while on tablets the menu will be exposed alongside the content because we have enough room to always show it.</string>
+    <string name="about">About</string>
+    <string name="licenses">Licenses</string>
+    <string name="contact">Contact</string>
+    <string name="about_msg">&lt;b>SlidingMenu&lt;/b> is an Open Source Android library 
+        that allows developers to easily create applications with sliding menus like those 
+        made popular in the Google+, YouTube, and Facebook applications. 
+        You can find it on GitHub by clicking the little octocat icon in the ActionBar. 
+        Feel free to use it all you want in your Android apps provided 
+        that you cite this project and include the license in your app.
+        &lt;br>&lt;br>
+		SlidingMenu is currently used in some incredibly popular Android 
+		apps such as Zappos, Plume, VLC for Android, and The Verge. 
+		If you are using SlidingMenu in your app and would like to be 
+		listed here, please let me know via Twitter (@slidingmenu)!</string>
+    <string name="apache_license">&lt;b>SlidingMenu &lt;/b>&lt;br>
+        \u00A9 2012 Jeremy Feinstein&lt;br>
+        SlidingMenu is licensed under the Apache License Version 2.0.
+        &lt;br>&lt;br>
+        &lt;b>ActionBarSherlock &lt;/b>&lt;br>
+        \u00A9 2012 Jake Wharton&lt;br>
+        ActionBarSherlock is licensed under the Apache License Version 2.0.
+        &lt;br>&lt;br>
+		&lt;b>The Apache License Version 2.0&lt;/b>&lt;br>
+		You may obtain a copy of the License at&lt;br>
+		&lt;center>&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0\'>
+				"http://www.apache.org/licenses/LICENSE-2.0&lt;/a>&lt;/center>&lt;br>
+		Unless required by applicable law or agreed to in writing, 
+		software distributed under the License is distributed on an 
+		\'AS IS\' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, 
+		either express or implied. See the License for the specific 
+		language governing permissions and limitations under the License.</string>
+    <string name="no_email">Sorry, I couldn\'t find any e-mail apps on your phone</string>
+    <string name="title_activity_content_detail_view">ContentDetailViewActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+
+    <string-array name="items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+    </string-array>
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+     <string name="button_label_ok">تایید</string>
+     <string name="button_label_deny">رد</string>
+     <string name="button_label_cancle">انصراف</string>
+    
+    
+    <string name="notification_content_delete">حذف پیامک</string>
+    <string name="notification_content_edit">اصلاح پیامک</string>
+    <string name="notification_content_add">پیامک جدید</string>
+    <string name="notification_content_add_category">اصلاح گروه پیامک</string>
+    <string name="notification_content_changed_category">تغییر گروه پیامک</string>
+    <string name="notification_category_delete">حذف گروه</string>
+    <string name="notification_category_edit">اصلاح گروه</string>
+    <string name="notification_category_move">انتقال گروه</string>
+    <string name="notification_category_merge">ادغام گروه</string>
+    <string name="notification_category_rename">تغییر نام گروه</string>
+    <string name="notification_category_add">ایجاد گروه جدید</string>
+    
+    <string name="notification_dialog_comment">توضیحات کاربر درخواست کننده:</string>
+    <string name="notification_dialog_content_delete">درخواست شده پیامک زیر از سیستم حذف شود. آیا تایید میکنید ؟ </string>
+    <string name="notification_dialog_content_edited">درخواست شده متن پیامک زیر در سیستم اصلاح شود. آیا متن اصلاح شده را تایید میکنید ؟ </string>
+    <string name="notification_dialog_content_edited_new_value">متن اصلاح شده:</string>
+    <string name="notification_dialog_content_add_category">پیشنهاد شده پیامک زیر به یک گروه دیگر نیز افزوده شود. آیا موافقید؟ </string>
+    <string name="notification_dialog_content_changed_category">پیشنهاد شده گروه پیامک زیر عوض شود.آیا تایید میکنید؟</string>
+    <string name="notification_dialog_content_create">یک پیامک جدید ارسال شده. آیا تایید میکنید ؟ </string>
+    <string name="notification_dialog_category_create">یک گروه جدید در سیستم ایجاد شده. آیا تایید میکنید ؟</string>
+    <string name="notification_dialog_category_merge">یک گروه در سیستم تغییر کرده. آیا تایید میکنید ؟</string>
+    <string name="notification_dialog_category_move">یک گروه در سیستم تغییر کرده. آیا تایید میکنید ؟</string>
+    <string name="notification_dialog_category_edit">یک گروه در سیستم تغییر کرده. آیا تایید میکنید ؟</string>
+    <string name="notification_dialog_category_delete">یک گروه از سیستم حذف شده است. آیا تایید میکنید ؟</string>
+    <string name="notification_dialog_unkown">این اطلاع برای شما غیر قابل نمایش است</string>
+    
+    <string name="similarity_check_activity_header">به نظر تعدادی از پیامک های ارسالی شما از پیش در سیستم ثبت شده.\r\nبرای مشاهده پیامک های مشابه و تایید ارسال روی هر مورد کلیک کنید</string>
+    <string name="similarity_check_dialog_header">پیامک های مشابه فهرست شده است. در صورتی که پیامک ارسالی شما جدید است تایید کنید تا در سیستم ثبت شود</string>
+    <string name="comments_suggestions_descroption">از طریق این پنجره میتوانید نظرات، پیشنهادات ، انتقادات و به طور کلی هر درخواست یا ایده جدیدی را با ما در میان بگذارید.
+        امیدواریم با کمک و همفکری شما  بتوانیم همواره خدمات بهتری ارائه دهیم.
+        پیشاپیش از تمامی نظرات شما بسیار متشکریم</string> 
+    
+    
+    <string name="edit_content_help">توسط این گزینه می‌توانید متن پیامک ها را اصلاح کنید. این اصلاح متن به صورت  آنی در سیستم شما اعمال می‌شود و به سایر کاربران نیز نمایش داده می‌شود تا در صورت تأیید برای سایرین نیز اعمال شود .</string>
+    <string name="new_content_help">شما می‌توانید پیامک های جدید را از طریق این گزینه ارسال کنید تا با نام خودتان نمایش داده شوند. میتوانید از طریق سایر نرم افزار ها ( فیسبوک، اسکایپ، ...) پیامک های جدید را شر کنید و سپس از طریق این نرم افزار آن ها را مدیریت و ارسال کنید یا پیامک های خود را تایپ و سپس ارسال کنید. 
+شما می‌توانید نام خود را هر زمانی از  طریق تنظیمات تغییر دهید تا پیامک های شما با نام جدید به نمایش گذاشته شود.
+        
+    </string>
+   
+    <string name="compress_content_help">روشی برای ارسال بسیار کم هزینه پیامک های طولانی به دوستان خود</string>
+    <string name="change_content_help">توسط این گزینه می‌توانید پیامک ها را از گروه جاری حذف و به گروه دیگری منتقل کنید. به این ترتیب پیامک بعد از انتقال فقط در گروه جدید نمایش داده خواهد شد. این تغییر نیز به سایر کاربران نمایش داده خواهد شد تا در صورت تأیید برای همه کاربران اعمال شود.</string>
+    <string name="extension_content_help">توسط این گزینه می‌توانید پیامک ها را علاوه بر گروه جاری به گروه های دیگری نیز اضافه کنید. به این ترتیب پیامک در گروه های جدید نیز نمایش داده خواهد شد.هر پیامک می‌تواند بدون محدودیت در گره های دیگری نیز نمایش داده شود. تمام تغییرات پس از اعمال در سیستم شما در صورت تأیید سایرین در سیستم اصلی اعمال می‌شود تا سایر کاربران نیز از آن منتفع شوند.</string>
+    <string name="favorite_content_help">هر پیامک را می‌توانید برای دسترسی های بعدی و سهولت استفاده مجدد،  توسط این گزینه به گروه علاقه مندی های خود اضافه کنید.</string>
+    <string name="share_content_help">به کمک این گزینه قادر خواهید بود پیامک را توسط سایر نرم افزار ها به اشتراک بگذارید.</string>
+    <string name="like_content_help">پیامک های مورد علاقه خود را لایک کنید تا سایر کاربران بتوانند وقت خود را تنها صرف زیبا ترین پیامک ها کنند، به کمک سایر کاربران خود شما هم از این امکان بهره مند خواهید شد.</string>
+    <string name="view_content_help">اگر مایلید  تنها پیامک هایی که مشاهده نکرده اید مشاهده کنید ، این دکمه را پس از دیدن هر پیامک لمس کنید و به کمک فیلتر های در نظر گرفته شده در نرم افزار از مشاهده ی پیامک های تکراری جلوگیری کنید.</string>
+    <string name="send_sms_content_help">با لمس این گزینه پیامک مورد نظر ارسال می‌شود تا سایر کاربران نیز از آن لذت ببرند در صورت تمایل قبل از ارسال  با کمک دکمه کنار آن مشخص کنید که می‌خواهید  سایر کاربران این پیامک را در کدام گروه مشاهده کنند.</string>
+     <string name="new_category_help">شما می توانید هر تعداد گروه جدید ، با هر نامی در گروه های اصلی و یا به عنوان زیر گروه هر کدام از گروه ها ایجاد کنید. حتی اگر مایلید گروهی به نام خودتان داشته باشید می‌توانید گروهی با نام خودتان زیرگروه " پیامک های کاربران" ایجاد کنید و دل نوشته های خود را در آن قرار دهید تا با نام خودتان نمایش داده شود.</string>
+     <string name="merge_category_help">اگر به نظرتان دو یا چند گروه هم محتوا هستند و نباید جدا نمایش داده شوند ، به کمک این گزینه آنها را باهم ادغام کنید. این تغییر در سیستم شما اعمال و در صورت تأیید سایر کاربران برای همه کاربران دیگر نیز اعمال خواهد شد.</string>
+     <string name="cut_category_help">اگر به نظرتان گروه ها درست طبقه بندی نشده اند به کمک این گزینه آنها را آن طور که مایلید و صحیح است طبقه بندی کنید. این تغییر در سیستم شما اعمال و در صورت تأیید سایر کاربران طبقه بندی کل سیستم نیز به این صورت به روز خواهد شد.</string>
+     <string name="unselect_all_category_help">تمام گروه ها را از حالت انتخاب خارج خواهد کرد</string>
+    
+    
+    <string name="restore_database_setting_preference_dialog">درصورت تایید، تمام تنظیمات و تغییراتی که در سیستم ایجاد کرده اید  حذف  و نرم افزار با آخرین وضعیت سرور به روز خواهد شد . عملیات غیر قابل بازگشت و غیر قابل لغو است  </string>
+   	<string name="reset_setting_preference_dialog">درصورت تایید، ;کلیه تنظیمات مربوط به قلم از جمله رنگ و اندازه به حالت پیش فرض باز خواهد گشت  </string>
+    <string name="user_identifier_preference_dialog">با این شناسه  وارد پنل کاربری در سایت www.wiki-sms.com شوید و نتیجه تغییراتی که اعمال کرده اید را همزمان مشاهده کنید. </string>
+   <string name="startup_dialog">از این پس می‌توانید توسط شناسه کاربری خود وارد سایت شده و فعالیت‌های خود را همزمان پیگیری کنید. برای مشاهده شناسه کاربری خود وارد قسمت تنظیمات شوید.</string>
+    <string name="smscomposer_permiumusers_installation_instruction"></string>
+    <string name="smscomposer_free_installation_instruction"></string>
+    <string name="smscomposer_installation_fail"></string>
+    <string name="search_hint">جستجو</string>
+    <string name="menu_settings">تنظیمات نمایش</string>
+    
+    
+    
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <TextView
+        android:id="@+id/ContentViewListItemTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/content_view_list_item_background1"
+        android:textColor="@color/background_dark">
+    </TextView>
+    <TextView
+        android:id="@+id/metaInfoTextView" 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/ContentViewListItemTextView"
+        android:layout_alignLeft="@id/ContentViewListItemTextView"
+        android:layout_alignBottom="@id/ContentViewListItemTextView"
+        android:padding="15dp"
+        android:textColor="@color/red"
+        android:background="@null">
+        </TextView>
+    
+
+</RelativeLayout>

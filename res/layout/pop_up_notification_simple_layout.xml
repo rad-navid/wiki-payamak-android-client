@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_simple_notification_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@id/arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/down_arrow" />
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/showTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="15dp"
+                android:visibility="visible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/showInfo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:visibility="visible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/showTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="15dp"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/showInfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/showTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="15dp"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/showInfo3"
+                style="PopupNotificationDialogTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:visibility="gone" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/CancelButton"
+                    android:layout_width="@dimen/ok_cancel_button_width"
+                    android:layout_height="@dimen/ok_cancel_button_heigth"
+                    android:drawableLeft="@drawable/cancel"
+                    android:text="@string/button_label_deny" >
+                </Button>
+
+                <Button
+                    android:id="@+id/OkButton"
+                    android:layout_width="@dimen/ok_cancel_button_width"
+                    android:layout_height="@dimen/ok_cancel_button_heigth"
+                    android:drawableLeft="@drawable/ok"
+                    android:text="@string/button_label_ok" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@id/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dip"
+        android:src="@drawable/up_arrow" />
+
+</LinearLayout>

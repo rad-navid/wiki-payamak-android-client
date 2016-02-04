@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/startSlidingMenuUiBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Start SlidingMenu Ui App" />
+    <Button
+        android:id="@+id/getReqButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Get Request" />
+    <Button
+        android:id="@+id/LunchCategoryExplorBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Lunch Category Explorer" />
+    <Button
+        android:id="@+id/ReindexContentCategory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Reindex Content Category" />
+    
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

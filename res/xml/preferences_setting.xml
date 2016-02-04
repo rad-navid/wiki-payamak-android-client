@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="تنظیمات کاربر" >
+        <com.peaceworld.wikisms.view.preference.UserIdentifierPreference
+            android:enabled="true"
+            android:key="USERID"
+            android:summary=""
+            android:title="شناسه کاربری" >
+        </com.peaceworld.wikisms.view.preference.UserIdentifierPreference>
+
+        <EditTextPreference
+            android:key="USERNAME"
+            android:summary="پیامک های ارسالی شما با این نام نمایش داده میشوند"
+            android:title="نام کاربری" >
+        </EditTextPreference>
+    </PreferenceCategory>
+
+    <PreferenceScreen android:title="تنظیمات نمایش کلی" >
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            android:defaultValue="@color/default_text_color"
+            android:key="TEXTCOLOR"
+            android:summary="متن پیامک ها با این رنگ نمایش داده خواهد شد"
+            android:title="رنگ متن" />
+
+        <com.peaceworld.wikisms.view.preference.FontPreference
+            android:defaultValue="BBadrBd.ttf"
+            android:key="TEXTFONT"
+            android:summary="فونت نمایش پیامک ها"
+            android:title="فونت" >
+        </com.peaceworld.wikisms.view.preference.FontPreference>
+
+        <ListPreference
+            android:key="TEXTSIZE"
+            android:summary="سایز نمایش پیامک ها"
+            android:title="سایز" >
+        </ListPreference>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="تنظیمات نمایش جزئیات" >
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            android:defaultValue="@color/default__detail_text_color"
+            android:key="DETAILTEXTCOLOR"
+            android:summary="متن پیامک ها با این رنگ نمایش داده خواهد شد"
+            android:title="رنگ متن" />
+
+        <com.peaceworld.wikisms.view.preference.FontPreference
+            android:key="DETAILTEXTFONT"
+            android:summary="فونت نمایش پیامک ها"
+            android:title="فونت" >
+        </com.peaceworld.wikisms.view.preference.FontPreference>
+
+        <ListPreference
+            android:key="DETAILTEXTSIZE"
+            android:summary="سایز نمایش پیامک ها"
+            android:title="سایز" >
+        </ListPreference>
+    </PreferenceScreen>
+
+    <PreferenceCategory android:title="نوتیفیکیشن" >
+        <EditTextPreference
+            android:defaultValue="50"
+            android:key="NOTIFICATIONMAXSIZE"
+            android:summary="حداکثر نوتیفیکیشن هایی که در هر نوبت مایل به دریافت هستید. حداقل 10 نوتیفیکیشن"
+            android:title="تعداد نوتیفیکیشن ها" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="بازگردانی تنظیمات اولیه" >
+        <com.peaceworld.wikisms.view.preference.ResetPreference
+            android:key="TEXTFONT"
+            android:summary="تنظیمات پیشفرض اعمال و نرم افزار با سرور همگام میشود"
+            android:title="بازگردانی تنظیمات اولیه" >
+        </com.peaceworld.wikisms.view.preference.ResetPreference>
+
+        <com.peaceworld.wikisms.view.preference.RestoreDatabasePreference
+            android:key="TEXTFONT"
+            android:summary="تنظیمات پیشفرض اعمال و نرم افزار با سرور همگام میشود"
+            android:title="همگام سازی داده ها" >
+        </com.peaceworld.wikisms.view.preference.RestoreDatabasePreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

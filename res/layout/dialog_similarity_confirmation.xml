@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_view_list_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:textColor="@color/red" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/confirmLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/CancelButton"
+            android:layout_width="@dimen/ok_cancel_button_width"
+            android:layout_height="@dimen/ok_cancel_button_heigth"
+            android:drawableLeft="@drawable/cancel"
+            android:text="@string/button_label_deny" >
+        </Button>
+
+        <Button
+            android:id="@+id/OkButton"
+            android:layout_width="@dimen/ok_cancel_button_width"
+            android:layout_height="@dimen/ok_cancel_button_heigth"
+            android:drawableLeft="@drawable/ok"
+            android:text="@string/button_label_ok" >
+        </Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/contentViewListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/confirmLinearLayout"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:divider="@null" >
+    </ListView>
+
+</RelativeLayout>

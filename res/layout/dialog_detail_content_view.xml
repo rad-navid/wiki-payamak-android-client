@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basic_container_relative_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/content_view_list_background" >
+
+    <LinearLayout
+        android:id="@+id/fanctinalitiLinearLyout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp" >
+
+        <ImageView
+            android:id="@+id/DeleteImageView"
+            android:layout_width="@dimen/header_image_button"
+            android:layout_height="@dimen/header_image_button"
+            android:background="@drawable/button_selector"
+            android:scaleType="fitCenter"
+            android:src="@drawable/delete" >
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/ExtendCategoryImageView"
+            android:layout_width="@dimen/header_image_button"
+            android:layout_height="@dimen/header_image_button"
+            android:background="@drawable/button_selector"
+            android:scaleType="fitCenter"
+            android:src="@drawable/extension" >
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/ChangeCategoryImageView"
+            android:layout_width="@dimen/header_image_button"
+            android:layout_height="@dimen/header_image_button"
+            android:background="@drawable/button_selector"
+            android:scaleType="fitCenter"
+            android:src="@drawable/change" >
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/EditImageView"
+            android:layout_width="@dimen/header_image_button"
+            android:layout_height="@dimen/header_image_button"
+            android:background="@drawable/button_selector"
+            android:scaleType="fitCenter"
+            android:src="@drawable/edit" >
+        </ImageView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/leftArrowImageView"
+        android:layout_width="@dimen/left_right_arrows"
+        android:layout_height="@dimen/left_right_arrows"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_selector"
+        android:scaleType="fitCenter"
+        android:src="@drawable/left_arrow" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/rightArrowImageView"
+        android:layout_width="@dimen/left_right_arrows"
+        android:layout_height="@dimen/left_right_arrows"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_selector"
+        android:scaleType="fitCenter"
+        android:src="@drawable/right_arrow" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/fanctinaliti2LinearLyout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/ViewTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/blue_text"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ViewIconImageView"
+            android:layout_width="@dimen/left_right_arrows"
+            android:layout_height="@dimen/left_right_arrows"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_selector"
+            android:scaleType="fitCenter"
+            android:src="@drawable/view_blue" >
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/LikeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/blue_text" />
+
+        <ImageView
+            android:id="@+id/LikeImageView"
+            android:layout_width="@dimen/footer_image_button"
+            android:layout_height="@dimen/footer_image_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/like" >
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/ShareImageView"
+            android:layout_width="@dimen/footer_image_button"
+            android:layout_height="@dimen/footer_image_button"
+            android:background="@drawable/button_selector"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share" >
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/SmsComposerImageView"
+            android:layout_width="@dimen/footer_image_button"
+            android:layout_height="@dimen/footer_image_button"
+            android:background="@drawable/button_selector"
+            android:scaleType="fitCenter"
+            android:src="@drawable/compress" >
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/FavoritImageView"
+            android:layout_width="@dimen/footer_image_button"
+            android:layout_height="@dimen/footer_image_button"
+            android:layout_marginRight="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/favorite" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fanctinaliti2LinearLyout"
+        android:layout_below="@id/fanctinalitiLinearLyout"
+        android:layout_toLeftOf="@id/rightArrowImageView"
+        android:layout_toRightOf="@id/leftArrowImageView"
+        android:gravity="center" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/ContentViewer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingRight="10dp" >
+            </TextView>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

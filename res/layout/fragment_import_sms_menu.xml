@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_dark"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical" >
+        
+        <RadioGroup
+        android:id="@+id/importSmsRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/groupbox_dark"
+        android:padding="15dp"
+        android:layout_margin="10dp">
+
+        <RadioButton
+			android:id="@+id/composeSmsRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/forground_light"
+            android:text="پیامک جدید را مینویسم">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/searchForSmsRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/forground_light"
+             android:text="از پیامک های موجود استفاده میکنم" >
+        </RadioButton>
+        
+      </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/searchSmsLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/groupbox_dark"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <AutoCompleteTextView
+                android:id="@+id/contactSelectorEditText"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/standard_button_shape"
+                android:hint="نام مخاطب را بنویسید"
+                android:padding="8dp" >
+            </AutoCompleteTextView>
+	
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/incomeCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Inbox"
+                android:textColor="@color/forground_light" />
+
+            <CheckBox
+                android:id="@+id/outcomeCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Sent"
+                android:textColor="@color/forground_light" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/searchSmsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_action_search"
+                android:text="نمایش پیامک ها"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/groupbox_dark"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/ContentMenuReturnButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/ic_action_view_as_list" />
+
+            <ImageView
+                android:id="@+id/MainMenuReturnButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_action_forward"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listViewContainerLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_view_list_background"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+    
+    <ListView
+        android:id="@+id/contentViewListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:background="@null"
+        android:divider="@null"
+        android:scrollingCache="false" >
+    </ListView>
+
+</LinearLayout>

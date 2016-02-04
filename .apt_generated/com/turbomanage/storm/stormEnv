@@ -1,0 +1,13 @@
+:CONV_START
+:CONV_END
+:DB_START
+dbName=wikisms_db,helperClass=com.peaceworld.wikisms.model.dao.WikiSmsDataBase,dbVersion=2
+com.peaceworld.wikisms.model.entity.dao.UserTableTable
+com.peaceworld.wikisms.model.entity.dao.CategoryNotificationTable
+com.peaceworld.wikisms.model.entity.dao.SequenceHolderTable
+com.peaceworld.wikisms.model.entity.dao.CommentsTable
+com.peaceworld.wikisms.model.entity.dao.ContentCategoryTable
+com.peaceworld.wikisms.model.entity.dao.ContentNotificationTable
+com.peaceworld.wikisms.model.entity.dao.ContentTable
+com.peaceworld.wikisms.model.entity.dao.ContentDirectChangeTable
+:DB_END
